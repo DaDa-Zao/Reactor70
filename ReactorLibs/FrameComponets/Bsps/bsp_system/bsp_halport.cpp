@@ -1,6 +1,9 @@
 #include "bsp_halport.hpp"
 #include "bsp_hardware.hpp"
 
+/**
+ *
+ */
 namespace Hardware
 {
     float MainFreq_MHz = 72.0f;

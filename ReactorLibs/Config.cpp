@@ -14,7 +14,7 @@ void Hardware::Config_Hardwares()
     /**-----    配置串口    -----**/
     Hardware::huart_host = ToID(&huart3);
     Hardware::huart_farcon = ToID(&huart2);
-    Hardware::huart_sick = ToID(&huart6);
+//    Hardware::huart_sick = ToID(&huart6);
     Hardware::huart_log = ToID(&huart7);
     Hardware::huart_optical = ToID(&huart8);
     Hardware::huart_other = nullptr;
@@ -39,7 +39,7 @@ void Hardware::Config_Hardwares()
 void Hardware::Config_Parameters()
 {
     /// @brief 配置主频
-    Hardware::MainFreq_MHz = 168;
+    Hardware::MainFreq_MHz = 180;
 
     /// @brief 日志输出模式
     Hardware::RTTLogAtUart = true;

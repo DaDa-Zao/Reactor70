@@ -1,7 +1,7 @@
 #include "System.hpp"
 #include "bsp_dwt.hpp"
 
-#include "Chassis.hpp"
+//#include "Chassis.hpp"
 #include "led_ws2812.hpp"
 #include "Monitor.hpp"
 #include "farcon.hpp"
@@ -12,7 +12,7 @@
 
 SystemType& System = SystemType::GetInstance();
 LedWs2812 sys_ledband;
-Farcon farcon;
+Farcon& farcon = Farcon::GetInstance();
 
 void SystemType::Init(bool Sc)
 {

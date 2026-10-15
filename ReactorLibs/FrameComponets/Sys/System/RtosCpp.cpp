@@ -11,8 +11,10 @@
 #include "motor_dji.hpp"
 #include "System.hpp"
 #include "RtosCpp.hpp"
-#include "Chassis.hpp"
+//#include "Chassis.hpp"
 #include "Monitor.hpp"
+
+#include "motor_dm_driver.hpp"
 
 /* ================= 任务句柄定义 ================= */
 // 如果需要在其他地方引用（如挂起任务），可以在头文件 extern
@@ -197,6 +199,7 @@ void ControlCpp()
     while (1)
     {
         MotorDJI_Driver::ControlAllMotors();
+        MotorDM_Driver::UpdateOnlineStatus();
         System.PerformanceRun();
         /***    最大循环频率：1000Hz     ***/
         osDelay(1); // FreeRTOS的极限，1ms喂狗
