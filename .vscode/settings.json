@@ -24,12 +24,10 @@
   "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
   "C_Cpp.intelliSenseEngine": "disabled",
   "clangd.arguments": [
-    "--compile-commands-dir=build/Debug",
-    "--query-driver=C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/*/bin/arm-none-eabi-gcc*,C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/*/bin/arm-none-eabi-g++*",
+    "--query-driver=D:/DevEnv/DevEnv/GNU-tools-for-STM32/bin/arm-none-eabi-gcc*,D:/DevEnv/DevEnv/GNU-tools-for-STM32/bin/arm-none-eabi-g++*",
     "--all-scopes-completion",
     "--completion-style=detailed",
     "--header-insertion=never",
-    "--clang-tidy",
     "-j=8"
   ],
   "editor.formatOnSave": false,
